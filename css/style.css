@@ -313,7 +313,7 @@ body {
   font-weight: bold;
 }
 #header {
-  height: 350px;
+  height: 400px;
   position: relative;
   border-bottom: 1px solid #ddd;
 }
@@ -353,7 +353,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("images/banner.jpg") center #000;
+  background: url("images/at.jpg") center #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
