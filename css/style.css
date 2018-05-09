@@ -123,7 +123,7 @@ body,
   height: 100%;
 }
 body {
-  background: #ddd;
+  background: #eee;
   font: 14px -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-text-size-adjust: 100%;
 }
@@ -174,7 +174,7 @@ body {
   -ms-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
   z-index: 1;
-  background: #ddd;
+  background: #eee;
 }
 .mobile-nav-on #wrap {
   left: 280px;
@@ -187,11 +187,6 @@ body {
     margin: 0 0.833333333333333%;
   }
 }
-@media screen and (min-width: 768px) {
-  #main {
-    float: right;
-  }
-}
 .article-date,
 .article-category-link,
 .archive-year,
@@ -199,7 +194,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #888;
+  color: #999;
   margin-bottom: 1em;
   margin-left: 5px;
   line-height: 1em;
@@ -211,7 +206,7 @@ body {
   background: #fff;
   -webkit-box-shadow: 1px 2px 3px #ddd;
   box-shadow: 1px 2px 3px #ddd;
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
   border-radius: 3px;
 }
 .article-entry h1,
@@ -237,11 +232,11 @@ body {
 .article-entry h6,
 .widget h6 {
   font-size: 1em;
-  color: #888;
+  color: #999;
 }
 .article-entry hr,
 .widget hr {
-  border: 1px dashed #ccc;
+  border: 1px dashed #ddd;
 }
 .article-entry strong,
 .widget strong {
@@ -313,9 +308,9 @@ body {
   font-weight: bold;
 }
 #header {
-  height: 400px;
+  height: 300px;
   position: relative;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ddd;
 }
 #header:before,
 #header:after {
@@ -353,7 +348,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("images/at.jpg") center #000;
+  background: url("images/banner.jpg") center #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -380,12 +375,12 @@ body {
   letter-spacing: 2px;
 }
 #subtitle {
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 16px;
   letter-spacing: 1px;
 }
 #subtitle-wrap {
-  margin-top: 20px;
+  margin-top: 16px;
 }
 #main-nav {
   float: left;
@@ -485,7 +480,7 @@ body {
 .search-form-input {
   border: none;
   background: none;
-  color: #666;
+  color: #555;
   width: 100%;
   font: 13px -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   outline: none;
@@ -507,7 +502,7 @@ body {
 }
 .search-form-submit:hover,
 .search-form-submit:focus {
-  color: #888;
+  color: #777;
 }
 .article {
   margin: 50px 0;
@@ -546,7 +541,7 @@ body {
   text-decoration: none;
   font-size: 2em;
   font-weight: bold;
-  color: #666;
+  color: #555;
   line-height: 1.1em;
   -webkit-transition: color 0.2s;
   -moz-transition: color 0.2s;
@@ -557,7 +552,7 @@ a.article-title:hover {
   color: #258fb8;
 }
 .article-entry {
-  color: #666;
+  color: #555;
   padding: 0 20px;
 }
 .article-entry:before,
@@ -620,11 +615,11 @@ a.article-title:hover {
 }
 .article-entry th {
   font-weight: bold;
-  border-bottom: 3px solid #ccc;
+  border-bottom: 3px solid #ddd;
   padding-bottom: 0.5em;
 }
 .article-entry td {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ddd;
   padding: 10px 0;
 }
 .article-entry blockquote {
@@ -656,7 +651,7 @@ a.article-title:hover {
   margin-left: 1em;
 }
 .article-entry .caption {
-  color: #888;
+  color: #999;
   display: block;
   font-size: 0.9em;
   margin-top: 0.5em;
@@ -684,8 +679,8 @@ a.article-title:hover {
   line-height: 1em;
   padding: 6px 15px;
   border-radius: 15px;
-  background: #ddd;
-  color: #888;
+  background: #eee;
+  color: #999;
   text-shadow: 0 1px #fff;
   text-decoration: none;
 }
@@ -698,7 +693,7 @@ a.article-title:hover {
 .article-footer {
   font-size: 0.85em;
   line-height: 1.6em;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #ddd;
   padding-top: 1.6em;
   margin: 0 20px 20px;
 }
@@ -711,11 +706,11 @@ a.article-title:hover {
   clear: both;
 }
 .article-footer a {
-  color: #888;
+  color: #999;
   text-decoration: none;
 }
 .article-footer a:hover {
-  color: #666;
+  color: #555;
 }
 .article-tag-list-item {
   float: left;
@@ -767,7 +762,7 @@ a.article-title:hover {
     margin-left: -4px;
     content: "";
     border-radius: 50%;
-    background: #ccc;
+    background: #ddd;
     -webkit-box-shadow: 0 1px 2px #fff;
     box-shadow: 0 1px 2px #fff;
   }
@@ -775,7 +770,7 @@ a.article-title:hover {
 .article-nav-link-wrap {
   text-decoration: none;
   text-shadow: 0 1px #fff;
-  color: #888;
+  color: #999;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -784,7 +779,7 @@ a.article-title:hover {
   display: block;
 }
 .article-nav-link-wrap:hover {
-  color: #666;
+  color: #555;
 }
 @media screen and (min-width: 768px) {
   .article-nav-link-wrap {
@@ -809,7 +804,7 @@ a.article-title:hover {
 .article-nav-caption {
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #ccc;
+  color: #ddd;
   line-height: 1em;
   font-weight: bold;
 }
@@ -843,15 +838,15 @@ a.article-title:hover {
   box-sizing: border-box;
   font: 14px -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   padding: 0 15px;
-  color: #666;
+  color: #555;
   outline: none;
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
   border-radius: 3px 3px 0 0;
   height: 36px;
   line-height: 36px;
 }
 .article-share-links {
-  background: #ddd;
+  background: #eee;
 }
 .article-share-links:before,
 .article-share-links:after {
@@ -860,6 +855,67 @@ a.article-title:hover {
 }
 .article-share-links:after {
   clear: both;
+}
+.article-share-twitter,
+.article-share-facebook,
+.article-share-pinterest,
+.article-share-google {
+  width: 50px;
+  height: 36px;
+  display: block;
+  float: left;
+  position: relative;
+  color: #999;
+  text-shadow: 0 1px #fff;
+}
+.article-share-twitter:before,
+.article-share-facebook:before,
+.article-share-pinterest:before,
+.article-share-google:before {
+  font-size: 20px;
+  font-family: FontAwesome;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -10px;
+  margin-left: -10px;
+  text-align: center;
+}
+.article-share-twitter:hover,
+.article-share-facebook:hover,
+.article-share-pinterest:hover,
+.article-share-google:hover {
+  color: #fff;
+}
+.article-share-twitter:before {
+  content: "\f099";
+}
+.article-share-twitter:hover {
+  background: #00aced;
+  text-shadow: 0 1px #008abe;
+}
+.article-share-facebook:before {
+  content: "\f09a";
+}
+.article-share-facebook:hover {
+  background: #3b5998;
+  text-shadow: 0 1px #2f477a;
+}
+.article-share-pinterest:before {
+  content: "\f0d2";
+}
+.article-share-pinterest:hover {
+  background: #cb2027;
+  text-shadow: 0 1px #a21a1f;
+}
+.article-share-google:before {
+  content: "\f0d5";
+}
+.article-share-google:hover {
+  background: #dd4b39;
+  text-shadow: 0 1px #be3221;
 }
 .article-gallery {
   background: #000;
@@ -890,7 +946,7 @@ a.article-title:hover {
   -webkit-box-shadow: 1px 2px 3px #ddd;
   box-shadow: 1px 2px 3px #ddd;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
   border-radius: 3px;
   margin: 50px 0;
 }
@@ -943,7 +999,7 @@ a.article-title:hover {
 .archive-article-title {
   text-decoration: none;
   font-weight: bold;
-  color: #666;
+  color: #555;
   -webkit-transition: color 0.2s;
   -moz-transition: color 0.2s;
   -ms-transition: color 0.2s;
@@ -957,7 +1013,7 @@ a.article-title:hover {
   margin-top: 1em;
 }
 .archive-article-date {
-  color: #888;
+  color: #999;
   text-decoration: none;
   font-size: 0.85em;
   line-height: 1em;
@@ -969,10 +1025,10 @@ a.article-title:hover {
   background: #fff;
   -webkit-box-shadow: 1px 2px 3px #ddd;
   box-shadow: 1px 2px 3px #ddd;
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
   border-radius: 3px;
   text-align: center;
-  color: #888;
+  color: #999;
   overflow: hidden;
 }
 #page-nav:before,
@@ -990,11 +1046,11 @@ a.article-title:hover {
   height: 2ex;
 }
 #page-nav a {
-  color: #888;
+  color: #999;
   text-decoration: none;
 }
 #page-nav a:hover {
-  background: #888;
+  background: #999;
   color: #fff;
 }
 #page-nav .prev {
@@ -1012,17 +1068,17 @@ a.article-title:hover {
   }
 }
 #page-nav .current {
-  color: #666;
+  color: #555;
   font-weight: bold;
 }
 #page-nav .space {
-  color: #ccc;
+  color: #ddd;
 }
 #footer {
   background: #262a30;
   padding: 50px 0;
-  border-top: 1px solid #ccc;
-  color: #888;
+  border-top: 1px solid #ddd;
+  color: #999;
 }
 #footer a {
   color: #258fb8;
@@ -1041,7 +1097,7 @@ a.article-title:hover {
   margin: 0 -20px;
   padding: 15px 20px;
   border-style: solid;
-  border-color: #ccc;
+  border-color: #ddd;
   border-width: 1px 0;
   overflow: auto;
   color: #ccc;
@@ -1057,7 +1113,7 @@ a.article-title:hover {
   font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
 }
 .article-entry code {
-  background: #ddd;
+  background: #eee;
   text-shadow: 0 1px #fff;
   padding: 0 0.3em;
 }
@@ -1109,7 +1165,7 @@ a.article-title:hover {
 .article-entry .gist {
   margin: 0 -20px;
   border-style: solid;
-  border-color: #ccc;
+  border-color: #ddd;
   border-width: 1px 0;
   background: #2d2d2d;
   padding: 15px 20px 15px 0;
@@ -1222,7 +1278,7 @@ pre .javascript .function {
 @media screen and (max-width: 479px) {
   .mobile-nav-link {
     display: block;
-    color: #888;
+    color: #999;
     text-decoration: none;
     padding: 15px 20px;
     font-weight: bold;
@@ -1243,12 +1299,12 @@ pre .javascript .function {
   margin: 50px 0;
 }
 .widget {
-  color: #555;
+  color: #777;
   text-shadow: 0 1px #fff;
-  background: #eee;
-  -webkit-box-shadow: 0 -1px 4px #ddd inset;
-  box-shadow: 0 -1px 4px #ddd inset;
-  border: 1px solid #ddd;
+  background: #ddd;
+  -webkit-box-shadow: 0 -1px 4px #ccc inset;
+  box-shadow: 0 -1px 4px #ccc inset;
+  border: 1px solid #ccc;
   padding: 15px;
   border-radius: 3px;
 }
@@ -1299,7 +1355,7 @@ pre .javascript .function {
 .tag-list-count,
 .archive-list-count {
   padding-left: 5px;
-  color: #888;
+  color: #999;
   font-size: 0.85em;
 }
 .category-list-count:before,
