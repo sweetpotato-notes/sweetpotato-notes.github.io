@@ -83,6 +83,11 @@
 <p>Rather, the point is that one cannot take a particular published price index series and interpret it as measuring adequately the underlying notion of a price change for a well specified, unchanging, commodity or service being transacted under identical conditions and terms in different time periods.</p>
 <p>One needs to reiterate, that in these kinds of models (as is also true for the rest of econometrics) the consistency of the final estimates depends both on the correctness of the assumed economic model and the correctness of the assumptions about the error structure. lo We tend to focus here on the latter, but the former is probably more important. For example, in Friedman’s (1957) classical permanent income consumption function model, the estimated elasticity of consumption with respect to income is a direct estimate of one minus the error ratio (the ratio of the variance of transitory income to the variance of measured income). But this conclusion is conditional on having assumed that the true elasticity of consumption with respect to permanent income is unity. If that is wrong, the first conclusion does not follow. Similarly in the profit-capital stock example above, we can do something because we have assumed that the true depreciation is both known and geometric. All our conclusions about the amount of error in the investment series are conditional on the correctness of these assumptions. </p>
 <p>The major problem in econometrics is not just missing data but the possibility (or more accurately, probability) that they are missing for a variety of self-selection reasons. Such “behavioral missing” implies not only a loss of efficiency but also the possibility of serious bias in the estimated coefficients of models that do not take this into account. The recent revival of interest in econometrics in limited dependent variables models, sample-selection, and sample self-selection problems has provided both the theory and computational techniques for attacking this problem. Since this range of topics is taken up in Chapter 28, I will only allude to some of these issues as we go along. It is worth noting, however, that this area has been pioneered by econometricians (especially Amemiya and Heckman) with statisticians only recently beginning to follow in their footsteps (e.g. Little, 1983).</p>
+<p>There are two related computational approaches to this problem: The first is the EM algorithm (Dempster et al., 1977). This is a general approach to maximum likelihood estimation where the problem is divided into an iterative two-step procedure. In the E-step (estimation), the missing values are estimated on the basis of the current parameter values of the model (in this case starting with all the available variances and covariances) and an M-step (maximization) in which maximum likelihood estimates of the model parameters are computed using the “completed” data set from the previous step. The new parameters are then used to solve again for the missing values which are then used in turn to reestimate the model, and this process is continued until convergence is achieved. While this procedure is easy to program, its convergence can be slow, and there are no easily available standard error estimates for the final results (though Beale and Little, 1975, indicate how they might be derived).</p>
+<p>Every econometric study is incomplete. The stated model usually lists only the “major” variables of interest and even then it is unlikely to have good measures<br>for all of the variables on the already foreshortened list. There are several ways in which econometricians have tried to cope with these facts of life: (1) Assume that the left-out components are random, minor, and independent of all the included exogenous variables. This throws the problem into the “disturbance” and leaves it there, except for possible considerations of heteroscedasticity, variance-components, and similar adjustments, which impinge only on the efficiency of the usual<br>estimates and not on their consistency. In many contexts it is difficult, however, to maintain the fiction that the left-out-variables are unrelated to the included ones. One is pushed than into either, (2), a specification sensitivity analysis where the direction and magnitude of possible biases are explored using prior information, scraps of evidence, and the standard left-out-variable bias formulae (Griliches 1957 and Chapter 5) or (3) one tries to transform the data so as to minimize the impact of such biases. </p>
+<p>Over 30 years ago Morgenstern (1950) asked whether economic data were accurate enough for the purposes that economists and econometricians were using them for. He raised serious doubts about the quality of many economic series and implicitly about the basis for the whole econometrics enterprise. Years have passed and there has been very little coherent response to his criticisms. There are basically four responses to his criticism and each has some merit: (1) The data are not that bad. (2) The data are lousy but it does not matter. (3) The data are bad but we have learned how to live with them and adjust for their foibles. (4) That is all there is. It is the only game in town and we have to make the best of it.</p>
+<p>Morgenstem did not distinguish adequately between levels and rates of change. Many large discrepancies represent definitional differences and studies that are mostly interested in the movements in such series may be able to evade much of this problem. The tradition in econometrics of allowing for “constants” in most relationships and not over-interpreting them, allows implicitly for permanent “errors” in the levels of the various series. It is also the case that in much of economic analysis one is after relatively crude first order effects and these may be rather insensitive even to significant inaccuracies in the data. While this may be an adequate response with respect to much of the standard especially macro-economic analysis, it seems inadequate when we contemplate some of the more recent elaborate non-linear multi-equational models being estimated at the frontier of the subject. They are much more likely to be sensitive to errors and inconsistencies in the data. </p>
+<p>One of the reasons why Morgenstem’s accusations were brushed off was that they came from “outside” and did not seem sensitive to the real difficulties of data collection and data generation. In most contexts the data are imperfect not by design but because that is all there is. Empirical economists have over generations adopted the attitude that having bad data is better than having no data at all, that their task is to learn as much as is possible about how the world works from the unquestionably lousy data at hand. While it is useful to alert users to their various imperfections and pitfalls, the available economic statistics are our main window on economic behavior. In spite of the scratches and the persistent fogging, we cannot stop peering through it and trying to understand what is happening to us and to our environment, nor should we. The problematic quality of economic data presents a continuing challenge to econometricians. It should not cause us to despair, but we should not forget it either.</p>
 
       
     </div>
@@ -150,7 +155,7 @@ s.setAttribute('data-timestamp', +new Date());
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/about-me/">about me</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/china/">china</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/macro/">macro</a><span class="category-list-count">28</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/micro/">micro</a><span class="category-list-count">23</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/science/">science</a><span class="category-list-count">4</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/about-me/">about me</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/china/">china</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/macro/">macro</a><span class="category-list-count">28</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/micro/">micro</a><span class="category-list-count">27</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/science/">science</a><span class="category-list-count">4</span></li></ul>
     </div>
   </div>
 
@@ -160,7 +165,7 @@ s.setAttribute('data-timestamp', +new Date());
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -173,23 +178,23 @@ s.setAttribute('data-timestamp', +new Date());
       <ul>
         
           <li>
+            <a href="/year/09/01/Prophets-of-innovation-Thomas-McCraw/">Prophets of Innovation (Thomas McCraw)</a>
+          </li>
+        
+          <li>
+            <a href="/year/08/29/Prophets-of-regulation-Thomas-McCraw-1984/">Prophets of Regulation (Thomas McCraw 1984)</a>
+          </li>
+        
+          <li>
+            <a href="/year/08/26/FUNCTIONAL-FORMS-IN-ECONOMETRIC-MODEL-BUILDING-Lawrence-J-Lau/">FUNCTIONAL FORMS in ECONOMETRIC MODEL BUILDING (Lawrence J. Lau)</a>
+          </li>
+        
+          <li>
+            <a href="/year/08/24/The-political-spectrum-Thomas-W-Hazlett/">The Political Spectrum (Thomas W. Hazlett)</a>
+          </li>
+        
+          <li>
             <a href="/year/08/23/Government-failure-VS-Market-failure-Clifford-Winston/">Government Failure vs Market Failure (Clifford Winston)</a>
-          </li>
-        
-          <li>
-            <a href="/year/08/22/Economic-data-issues-Zvi-Griliches/">Economic Data Issues (Zvi Griliches)</a>
-          </li>
-        
-          <li>
-            <a href="/year/08/16/Beyond-balanced-growth-Danyang-Xie-2001/">Beyond Balanced Growth (Danyang Xie 2001)</a>
-          </li>
-        
-          <li>
-            <a href="/year/08/08/The-Mystery-of-TFP-Nicholas-Oulton-2016/">The Mystery of TFP (Nicholas Oulton 2016)</a>
-          </li>
-        
-          <li>
-            <a href="/year/08/05/Risks-in-China’s-Financial-System-Wei-Xiong/">Risks in China&#39;s Financial System (Wei Xiong)</a>
           </li>
         
       </ul>
